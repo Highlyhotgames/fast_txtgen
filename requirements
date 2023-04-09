@@ -18,6 +18,7 @@ chmod +x install;
 chmod +x download;
 chmod +x run;
 chmod +x start;
+cd webui;
 echo -e "\033[1;35mFixing Text Generation WebUI to an older version (step 15 of 24) ...\033[0m";
 git reset --hard fcda3f87767e642d1c0411776e549e1d3894843d > /dev/null 2>&1;
 cp install webui/text-generation-webui/install;
