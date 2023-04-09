@@ -15,7 +15,6 @@ windows 10/11 latest version (and it is obvious that you can try it without havi
 While we will need to restart the Ubuntu terminal a few times, I've done my best to simplify the instructions
 to minimize the number of steps. This will help you explore these AI models as fast as possible.
 
-I used some lines "git reset..." to maximize compatibility throughout time.
 
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
@@ -61,14 +60,14 @@ Click on yes to create a new file; copy and paste the content below:
 
 Close notepad, click on save; close prompt;
 
-When WSL installation ends, enter a new username and pwd
+When WSL installation ends, enter a username and a password
 
 
 	clear && git clone https://github.com/Highlyhotgames/fast_txtgen_7B.git > /dev/null 2>&1 && cd fast_txtgen_7B && chmod +x requirements && ./requirements
 	
 
 
-Wait for message to close terminal
+Enter password and wait for message to close terminal; close
 
 To ensure WSL2 is activated and to update:
 
@@ -79,11 +78,9 @@ Click on Start menu; type cmd and run as Administrator
 	wsl --set-version Ubuntu 2 & wsl --update
 
 
-Without closing prompt, click on start menu; right-click on Ubuntu; more -> pin to taskbar;
+Without closing prompt, open windows update and check for updates - it will get an update for WSL;
 
-Open windows update and check for updates - it will get an update for WSL;
-
-After update, go back to Admin prompt:
+After update, go back to Admin prompt and run this line:
 
 
 	cd lxss\lib & del libcuda.so & del libcuda.so.1 & wsl -e /bin/bash -c "ln -s libcuda.so.1.1 libcuda.so.1 && ln -s libcuda.so.1.1 libcuda.so" & wsl --shutdown & exit
@@ -99,11 +96,7 @@ Open Ubuntu:
 When "checking CUDA Installation" it will display a message "release 11.7" in cyan color.
 
 
-After installation is complete, you can download the model you want:
-
-	./download
-
-After downloading is complete, you can run server:
+After installation you may run server:
 
 	./run
 
