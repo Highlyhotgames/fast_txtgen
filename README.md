@@ -95,7 +95,7 @@ Open Ubuntu:
 When "checking CUDA Installation" it will display a message "release 11.7" in cyan color.
 
 
-After installation is complete, download the model you want by entering the numbers of the models separated by spaces, eg. 2 3 :
+After installation is complete, select the models by entering the numbers of the models you want from the ones the list, you can download multiple models at once separating them with space, eg. 2 3 :
 
 	./download
 
