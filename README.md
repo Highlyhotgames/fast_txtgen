@@ -89,18 +89,18 @@ Click on Start menu; type cmd and run as Administrator
 
 Open windows update and check for updates - it will get an update for WSL;
 
-Open Ubuntu:
+Open Ubuntu, type:
 
 
-	./install
+	install
 	
 
 When "checking CUDA Installation" it will display a message "release 11.7" in cyan color.
 
 
-After installation is complete, type:
+After installation is complete:
 
-	./download
+	download
 
 Select the models by entering the numbers of the models you want from the ones the list
 
@@ -110,7 +110,7 @@ After download is complete, exit by entering '5'
 
 To run the webUI server:
 
-	./run
+	run
 
 Default URL:
 
@@ -122,7 +122,7 @@ Default URL:
 
 If u closed and want to run again, open Ubuntu and paste this command:
 
-	./start
+	start
 
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
