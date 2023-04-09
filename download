@@ -1,0 +1,56 @@
+#!/bin/bash
+echo -e "\033[1;35mActivating Miniconda env 'webui' ...\033[0m";
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate webui > /dev/null 2>&1;
+cd webui/text-generation-webui;
+
+options=("7B" "13B" "30B" "65B" "Quit")
+
+while true; do
+    echo "Please select one or more models (separated by spaces, e.g.: 7 13):"
+    # Display the menu options using a for loop
+    for i in "${!options[@]}"; do
+        echo "$((i+1)). ${options[i]}"
+    done
+
+    # Read the user's choices into an array
+    read -ra choices
+
+    # Check if the user wants to quit
+    if [[ "${choices[*]}" == *"${#options[@]}"* ]]; then
+        break
+    fi
+
+    # Loop through the user's choices and execute the corresponding command
+    for choice in "${choices[@]}"; do
+        # Check if the user's choice is a valid option
+        if [[ "$choice" -ge 1 && "$choice" -le "${#options[@]}" ]]; then
+            case "${options[$((choice-1))]}" in
+                "7B")
+                    echo "Retrieving 7B model files from torrent"
+                    aria2c LLaMA-HF-4bit-128g.torrent --select-file=2-7,25 -d ~/webui/text-generation-webui/models --auto-file-renaming=false --quiet=false --allow-overwrite=true --max-connection-per-server=4 --seed-time=0 --summary-interval=0 --disable-ipv6=true;
+                    ;;
+                "13B")
+                    echo "Retrieving 13B model files from torrent"
+                    aria2c LLaMA-HF-4bit-128g.torrent --select-file=8-14 -d ~/webui/text-generation-webui/models --auto-file-renaming=false --quiet=false --allow-overwrite=true --max-connection-per-server=4 --seed-time=0 --summary-interval=0 --disable-ipv6=true;
+                    ;;
+                "30B")
+                    echo "Retrieving 30B model files from torrent"
+                    aria2c LLaMA-HF-4bit-128g.torrent --select-file=15-21 -d ~/webui/text-generation-webui/models --auto-file-renaming=false --quiet=false --allow-overwrite=true --max-connection-per-server=4 --seed-time=0 --summary-interval=0 --disable-ipv6=true;
+                    ;;
+                "65B")
+                    echo "Retrieving 65B model files from torrent"
+                    aria2c LLaMA-HF-4bit-128g.torrent --select-file=22-24,1,26 -d ~/webui/text-generation-webui/models --auto-file-renaming=false --quiet=false --allow-overwrite=true --max-connection-per-server=4 --seed-time=0 --summary-interval=0 --disable-ipv6=true;
+                    ;;
+                *)
+                    echo "Invalid choice. Please try again."
+                    ;;
+            esac
+        else
+            echo "Invalid choice. Please try again."
+        fi
+    done
+
+done
+
+echo -e "\033[32mDownload is complete! You can run server now with ./run\033[0m"
