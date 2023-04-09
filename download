@@ -7,7 +7,7 @@ cd webui/text-generation-webui;
 options=("7B" "13B" "30B" "65B" "Quit")
 
 while true; do
-    echo "Please select one or more models (separated by spaces, e.g.: 7 13):"
+    echo "Please select one or more models (separated by spaces, e.g.: 2 3):"
     # Display the menu options using a for loop
     for i in "${!options[@]}"; do
         echo "$((i+1)). ${options[i]}"
