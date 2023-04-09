@@ -92,11 +92,12 @@ Open Ubuntu:
 	./install
 	
 
-
 When "checking CUDA Installation" it will display a message "release 11.7" in cyan color.
 
 
-After installation you may run server:
+After installation 
+
+After download is complete you may run the webUI server:
 
 	./run
 
