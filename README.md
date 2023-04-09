@@ -99,25 +99,15 @@ After installation is complete, select the models by entering the numbers of the
 
 	./download
 
-After download is complete you may run the webUI server:
+After download is complete, exit with: 5
+
+To run the webUI server:
 
 	./run
 
 Default URL:
 
 —> http://127.0.0.1:7860
-
-----------------------------------------------------------------------------------
-----------------------------------------------------------------------------------
-----------------------------------------------------------------------------------
-
-To start server, open Ubuntu:
-
-	conda activate webui && cd webui/text-generation-webui
-	
-Run:
-
-	python server.py --wbits 4 --model llama-7b-4bit-128g --groupsize 128 --chat
 
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
