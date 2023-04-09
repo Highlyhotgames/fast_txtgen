@@ -100,7 +100,7 @@ When "checking CUDA Installation" it will display a message "release 11.7" in cy
 
 After installation is complete, select the models by entering the numbers of the models you want from the ones the list, you can download multiple models at once separating them with space, eg. 2 3 :
 
-	cd fast_txtgen && cd text-generation-webui && ./download
+	cd fast_txtgen/text-generation-webui && ./download
 
 After download is complete, exit by entering '5'
 
