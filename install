@@ -1,6 +1,7 @@
 #!/bin/bash
 clear; cd webui;
 export PATH=~/miniconda3/envs/webui/bin:$PATH;
+export PATH=~/fast_txtgen:$PATH;
 echo -e "\033[1;35mInstalling Miniconda (step 1 of 24) ...\033[0m";
 bash Miniconda3-latest-Linux-x86_64.sh -b > /dev/null 2>&1;
 source ~/miniconda3/etc/profile.d/conda.sh;
