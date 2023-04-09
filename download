@@ -70,4 +70,4 @@ cd models;
 rm -r LLaMA-HF-4bit-128g;
 rm LLaMA-HF-4bit-128g.aria2;
 chmod +x ~/fast_txtgen/run;
-cp ~/fast_txtgen/run ~/fast_txtgen/webui/text-generation-webui/run
+cp ~/fast_txtgen/run ~/fast_txtgen/webui/text-generation-webui/run; cd ..;
