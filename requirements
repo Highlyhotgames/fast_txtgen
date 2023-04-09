@@ -12,7 +12,6 @@ echo -e "\033[0;37mInstalling Aria2 (to download model)...\033[0m";
 sudo apt-get install aria2 -y > /dev/null;
 echo -e "\033[1;32mDownloading Miniconda ...\033[0m";
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh > /dev/null 2>&1;
-echo -e "\033[1;34mAll done, you can close this window now ...\033[0m"
 cd ..; 
 chmod +x install;
 chmod +x download;
@@ -29,3 +28,4 @@ cp install webui/text-generation-webui/install;
 cp download webui/text-generation-webui/download;
 cp run webui/text-generation-webui/install;
 cp start ../start;
+echo -e "\033[1;34mAll done, you can close this window now ...\033[0m"
