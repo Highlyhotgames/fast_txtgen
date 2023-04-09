@@ -1,4 +1,4 @@
-# Installation Script for LLaMa 7B 4bit 128g on WSL
+# Installation Script for LLaMa 4bit 128g on WSL
 
 
 This is a tutorial on how to install LLaMa on your Windows machine using WSL (Windows Subsystem for Linux).
