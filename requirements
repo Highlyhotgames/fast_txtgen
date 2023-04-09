@@ -1,5 +1,5 @@
 #!/bin/bash
-chmod +x install; clear;
+clear;
 echo -e "\033[1;34mAdding Universe APT repository to Ubuntu, insert your password:\033[0m";
 sudo add-apt-repository universe -y > /dev/null;
 echo -e "\033[1;35mUpdating Ubuntu...\033[0m";
