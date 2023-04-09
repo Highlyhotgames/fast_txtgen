@@ -13,6 +13,11 @@ sudo apt-get install aria2 -y > /dev/null;
 echo -e "\033[1;32mDownloading Miniconda ...\033[0m";
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh > /dev/null 2>&1;
 echo -e "\033[1;34mAll done, you can close this window now ...\033[0m"
-cd ..; cp install ~/fast_txtgen/webui/text-generation-webui/install;
-cp download ~/fast_txtgen/webui/text-generation-webui/download;
-cp run ~/fast_txtgen/webui/text-generation-webui/install; cp start ~/start;
+cd ..; 
+chmod +x install;
+chmod +x download;
+chmod +x run;
+chmod +x start;
+cp install webui/text-generation-webui/install;
+cp download webui/text-generation-webui/download;
+cp run webui/text-generation-webui/install; cp start ~/start;
