@@ -101,7 +101,7 @@ When "checking CUDA Installation" it will display a message "release 11.7" in cy
 
 After installation is complete, you can download the model you want:
 
-  ./download
+	./download
 
 After downloading is complete, you can run server:
 
