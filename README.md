@@ -128,7 +128,7 @@ Default URL:
 
 If u closed and want to run again, open Ubuntu and paste this command:
 
-	start
+	cd ~/fast_txtgen && ./start
 
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
