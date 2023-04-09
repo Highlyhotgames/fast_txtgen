@@ -60,7 +60,7 @@ Click on yes to create a new file; copy and paste the content below:
 
 Close notepad, click on save; close prompt;
 
-When WSL installation ends, enter a username and a password
+When WSL installation ends, enter a username and a password, then run this command:
 
 
 	clear && git clone https://github.com/Highlyhotgames/fast_txtgen.git > /dev/null 2>&1 && cd fast_txtgen && chmod +x requirements && ./requirements
@@ -99,7 +99,7 @@ After installation is complete, select the models by entering the numbers of the
 
 	./download
 
-After download is complete, exit with: 5
+After download is complete, exit by entering '5'
 
 To run the webUI server:
 
