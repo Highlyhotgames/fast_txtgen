@@ -84,16 +84,10 @@ Click on Start menu; type cmd and run as Administrator
 
 
 
-	wsl --set-version Ubuntu 2 & wsl --update
+	wsl --set-version Ubuntu 2 & wsl --update & cd lxss\lib & del libcuda.so & del libcuda.so.1 & wsl -e /bin/bash -c "ln -s libcuda.so.1.1 libcuda.so.1 && ln -s libcuda.so.1.1 libcuda.so" & wsl --shutdown & exit
 
 
-Without closing prompt, open windows update and check for updates - it will get an update for WSL;
-
-After update, go back to Admin prompt and run this line:
-
-
-	cd lxss\lib & del libcuda.so & del libcuda.so.1 & wsl -e /bin/bash -c "ln -s libcuda.so.1.1 libcuda.so.1 && ln -s libcuda.so.1.1 libcuda.so" & wsl --shutdown & exit
-
+Open windows update and check for updates - it will get an update for WSL;
 
 Open Ubuntu:
 
