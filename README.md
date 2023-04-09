@@ -56,7 +56,13 @@ Click on yes to create a new file; copy and paste the content below:
 	processors=2
 	swap=20GB
 	localhostforwarding=true
-
+		
+Change memory and swap sizes to match the models you will test (or hardware capabilities) following this list:
+	
+7B -> 6GB/20GB
+13B -> N/A / N/A
+30B -> N/A / N/A
+65B -> N/A / N/A
 
 Close notepad, click on save; close prompt;
 
