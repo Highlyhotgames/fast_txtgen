@@ -24,6 +24,7 @@ git clone https://github.com/oobabooga/text-generation-webui.git > /dev/null 2>&
 cd text-generation-webui;
 echo -e "\033[1;35mFixing Text Generation WebUI to an older version (step 15 of 24) ...\033[0m";
 git reset --hard fcda3f87767e642d1c0411776e549e1d3894843d > /dev/null 2>&1;
+cd ../..;
 cp install webui/text-generation-webui/install;
 cp download webui/text-generation-webui/download;
 cp run webui/text-generation-webui/install;
