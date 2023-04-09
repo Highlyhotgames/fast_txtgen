@@ -89,7 +89,7 @@ After update, go back to Admin prompt and run this line:
 Open Ubuntu:
 
 
-	cd ~/fast_txtgen/ && ./install
+	cd fast_txtgen && ./install
 	
 
 When "checking CUDA Installation" it will display a message "release 11.7" in cyan color.
@@ -97,13 +97,13 @@ When "checking CUDA Installation" it will display a message "release 11.7" in cy
 
 After installation is complete, select the models by entering the numbers of the models you want from the ones the list, you can download multiple models at once separating them with space, eg. 2 3 :
 
-	cd ~/fast_txtgen/ && ./download
+	cd fast_txtgen && ./download
 
 After download is complete, exit by entering '5'
 
 To run the webUI server:
 
-	cd ~/fast_txtgen/ && ./run
+	cd fast_txtgen && ./run
 
 Default URL:
 
