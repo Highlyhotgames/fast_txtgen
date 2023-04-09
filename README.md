@@ -92,7 +92,7 @@ Open windows update and check for updates - it will get an update for WSL;
 Open Ubuntu:
 
 
-	. ~/.bashrc && ./install
+	./install
 	
 
 When "checking CUDA Installation" it will display a message "release 11.7" in cyan color.
