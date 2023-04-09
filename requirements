@@ -24,4 +24,5 @@ cd text-generation-webui;
 echo -e "\033[1;35mFixing Text Generation WebUI to an older version (step 15 of 24) ...\033[0m";
 git reset --hard fcda3f87767e642d1c0411776e549e1d3894843d > /dev/null 2>&1;
 cd ../..;
+export PATH=~/fast_txtgen:$PATH;
 echo -e "\033[1;34mAll done, you can close this window now ...\033[0m";
