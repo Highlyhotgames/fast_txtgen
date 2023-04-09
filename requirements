@@ -26,4 +26,5 @@ echo -e "\033[1;35mFixing Text Generation WebUI to an older version ...\033[0m";
 git reset --hard fcda3f87767e642d1c0411776e549e1d3894843d > /dev/null 2>&1;
 cd ../..;
 export PATH=$PATH:~/fast_txtgen;
+sudo ln -s ~/fast_txtgen/install /usr/local/bin/
 echo -e "\033[1;34mAll done, you can close this window now ...\033[0m";
