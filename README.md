@@ -116,7 +116,7 @@ After download is complete, exit by entering '5'
 
 To run the webUI server:
 
-	run
+	cd fast_txtgen && ./run
 
 Default URL:
 
