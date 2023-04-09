@@ -56,4 +56,4 @@ pip install -r requirements.txt > /dev/null 2>&1;
 echo -e "\033[32mConverting magnet link to a .torrent file (step 22 of 22) ...\033[0m";
 aria2c --bt-metadata-only=true --bt-save-metadata=true "magnet:?xt=urn:btih:88f7d9d2460ffcaf78b21e83012de00939eacb65&dn=LLaMA-HF-4bit-128g&tr=http%3a%2f%2fbt2.archive.org%3a6969%2fannounce&tr=http%3a%2f%2fbt1.archive.org%3a6969%2fannounce" > /dev/null 2>&1;
 mv 88f7d9d2460ffcaf78b21e83012de00939eacb65.torrent LLaMA-HF-4bit-128g.torrent;
-echo -e "\033[1;34mInstalled successfully! If this is the first time, download a model typing "download" ... If downloaded already, you can run webUI with: run\033[0m";
+echo -e "\033[1;34mInstalled successfully! If this is the first time, download a model typing "download" ... If downloaded already, you can run webUI with "run"\033[0m";
