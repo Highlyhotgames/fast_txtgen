@@ -66,7 +66,9 @@ while true; do
 done
 
 echo -e "\033[32mDownload is complete! You can run server now with ./run\033[0m"
-cd models; rm -r LLaMA-HF-4bit-128g; cd ..;
+cd models;
+rm -r LLaMA-HF-4bit-128g;
+rm LLaMA-HF-4bit-128g.aria2;
 cp ~/fast_txtgen/run ~/;
 chmod +x ~/run;
 
