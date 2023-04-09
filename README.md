@@ -5,7 +5,8 @@ This is an installation script for LLaMa on your Windows machine using WSL (Wind
 Although with some tweaks you may get this to work properly on another hardware or on multi-GPU setups,
 this tutorial is specifically designed to work with Nvidia graphics cards - and I only cover a Single-GPU configuration.
 I'll be using my RTX2060 with 6GB to load Llama model 7B with 4-bit quantization,
-but you can try this tutorial with other models that fit your Nvidia hardware.
+but you can try this tutorial with other models that fit your Nvidia hardware:
+
 
 ----------------------------------------------------------------------------------
 
