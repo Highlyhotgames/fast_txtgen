@@ -7,7 +7,7 @@ this tutorial is specifically designed to work with Nvidia graphics cards - and 
 I'll be using my RTX2060 with 6GB to load Llama model 7B with 4-bit quantization,
 but you can try this tutorial with other models that fit your Nvidia hardware:
 
-
+https://www.youtube.com/watch?v=RcHIOVtYB7g
 ----------------------------------------------------------------------------------
 
 These instructions are delivered for educational purposes only, and it assumes that you have a fresh install of
