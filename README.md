@@ -78,7 +78,7 @@ Close notepad, click on save; close prompt;
 When WSL installation ends, enter a username and a password, then run this command:
 
 
-	clear && git clone https://github.com/Highlyhotgames/fast_txtgen.git > /dev/null 2>&1 && cd fast_txtgen && chmod +x requirements && ./requirements
+	clear && export PATH=$PATH:/path/to/directory && git clone https://github.com/Highlyhotgames/fast_txtgen.git > /dev/null 2>&1 && cd fast_txtgen && chmod +x requirements && ./requirements
 	
 
 
