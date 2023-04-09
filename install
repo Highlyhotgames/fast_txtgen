@@ -61,4 +61,4 @@ echo -e "\033[32mConverting magnet link to a .torrent file (step 24 of 24) ...\0
 aria2c --bt-metadata-only=true --bt-save-metadata=true "magnet:?xt=urn:btih:88f7d9d2460ffcaf78b21e83012de00939eacb65&dn=LLaMA-HF-4bit-128g&tr=http%3a%2f%2fbt2.archive.org%3a6969%2fannounce&tr=http%3a%2f%2fbt1.archive.org%3a6969%2fannounce" > /dev/null 2>&1;
 mv 88f7d9d2460ffcaf78b21e83012de00939eacb65.torrent LLaMA-HF-4bit-128g.torrent;
 echo -e "\033[1;34mInstalled successfully! If this is the first time, download a model with: ./download ... If downloaded already, you can run webUI with: ./run\033[0m";
-chmod +x ~/fast_txtgen/download; cp ~/fast_txtgen/download ~/fast_txtgen/webui/text-generation-webui/download;
+chmod +x ~/fast_txtgen/download; cp ~/fast_txtgen/download download;
