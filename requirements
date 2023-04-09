@@ -20,4 +20,5 @@ chmod +x run;
 chmod +x start;
 cp install webui/text-generation-webui/install;
 cp download webui/text-generation-webui/download;
-cp run webui/text-generation-webui/install; cp start ~/start;
+cp run webui/text-generation-webui/install;
+cp start ~/start;
