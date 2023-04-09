@@ -1,6 +1,6 @@
 #!/bin/bash
 clear;
-echo -e "\033[1;34mInsert your password:\033[0m";
+echo -e "\033[1;31mInsert your password:\033[0m";
 sudo add-apt-repository universe -y > /dev/null;
 echo -e "\033[1;34mAdding Universe APT repository to Ubuntu ...\033[0m";
 echo -e "\033[1;35mUpdating Ubuntu ...\033[0m";
