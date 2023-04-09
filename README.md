@@ -131,6 +131,9 @@ If you need to edit the run script to suit your needs, run this:
 
 	cd fast_txtgen && nano -w run && cd ..
 
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 To remove completely (including WSL), open cmd as Admin:
 
 	wsl --shutdown & wsl --unregister Ubuntu
