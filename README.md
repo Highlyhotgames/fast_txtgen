@@ -106,7 +106,7 @@ When "checking CUDA Installation" it will display a message "release 11.7" in cy
 
 After installation is complete:
 
-	download
+	cd fast_txtgen && ./download
 
 Select the models by entering the numbers of the models you want from the ones the list
 
