@@ -63,7 +63,7 @@ Close notepad, click on save; close prompt;
 When WSL installation ends, enter a username and a password
 
 
-	clear && git clone https://github.com/Highlyhotgames/fast_txtgen_7B.git > /dev/null 2>&1 && cd fast_txtgen_7B && chmod +x requirements && ./requirements
+	clear && git clone https://github.com/Highlyhotgames/fast_txtgen.git > /dev/null 2>&1 && cd fast_txtgen && chmod +x requirements && ./requirements
 	
 
 
