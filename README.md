@@ -98,7 +98,7 @@ Open windows update and check for updates - it will get an update for WSL;
 Open Ubuntu, type:
 
 
-	install
+	cd fast_txtgen && ./install
 	
 
 When "checking CUDA Installation" it will display a message "release 11.7" in cyan color.
@@ -116,7 +116,7 @@ After download is complete, exit by entering '5'
 
 To run the webUI server:
 
-	./run
+	cd fast_txtgen && ./run
 
 Default URL:
 
@@ -128,14 +128,14 @@ Default URL:
 
 If u closed and want to run again, open Ubuntu and paste this command:
 
-	cd ~/fast_txtgen && ./start
+	cd fast_txtgen && ./start
 
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 If you need to edit the run script to suit your needs, run this:
 
-	cd fast_txtgen && nano -w run && cd ..
+	cd fast_txtgen && ./edit
 
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
