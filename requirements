@@ -17,6 +17,7 @@ chmod +x install;
 chmod +x download;
 chmod +x run;
 chmod +x start;
+chmod +x edit;
 cd webui;
 echo -e "\033[32mCloning Text Generation WebUI from Oobabooga ...\033[0m";
 git clone https://github.com/oobabooga/text-generation-webui.git > /dev/null 2>&1;
