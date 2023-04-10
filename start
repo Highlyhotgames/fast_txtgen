@@ -1,3 +1,3 @@
 #!/bin/bash
-cd fast_txtgen/webui/text-generation-webui;
+cd webui/;
 ./run;
