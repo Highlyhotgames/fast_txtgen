@@ -1,2 +1,2 @@
 #!/bin/bash
-cd fast_txtgen && nano -w run && cd ..;
+nano -w run;
