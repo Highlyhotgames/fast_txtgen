@@ -40,7 +40,7 @@ Install git:
 
 Clone repository and reboot into console mode:
 
-	git clone --branch linux https://github.com/Highlyhotgames/fast_txtgen.git && cd fast_txtgen && chmod +x remove_gui && ./remove_gui
+	git clone --branch Linux https://github.com/Highlyhotgames/fast_txtgen.git && cd fast_txtgen && chmod +x remove_gui && ./remove_gui
 
 after reboot:
 
