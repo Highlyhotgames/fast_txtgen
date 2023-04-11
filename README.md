@@ -34,7 +34,7 @@ Open terminal:
 
 Install git:
 
-	sudo apt-get install git -y
+	sudo apt install git -y
 
 ----------------------------------------------------------------------------------
 
