@@ -1,30 +1,30 @@
 #!/bin/bash
 clear;
 sudo add-apt-repository universe -y > /dev/null;
-echo -e "\033[1;35mAdding Universe APT repository to Ubuntu (step 1 of 11) ...\033[0m";
-echo -e "\033[1;35mUpdating Ubuntu (step 2 of 11) ...\033[0m";
+echo -e "\033[1;32mAdding Universe APT repository to Ubuntu (step 1 of 11) ...\033[0m";
+echo -e "\033[1;32mUpdating Ubuntu (step 2 of 11) ...\033[0m";
 sudo apt-get update > /dev/null 2>&1;
 sudo apt-get upgrade -y > /dev/null 2>&1;
-echo -e "\033[0;37mInstalling build-essential/pkg-config/libglvnd-dev/git (step 3 of 11) ...\033[0m";
+echo -e "\033[0;32mInstalling build-essential/pkg-config/libglvnd-dev/git (step 3 of 11) ...\033[0m";
 sudo apt install build-essential -y > /dev/null 2>&1;
 sudo apt install pkg-config > /dev/null 2>&1;
 sudo apt install libglvnd-dev -y > /dev/null 2>&1;
-echo -e "\033[0;36mRegistering script files as executables (step 4 of 11) ...\033[0m";
+echo -e "\033[0;32mRegistering script files as executables (step 4 of 11) ...\033[0m";
 mkdir webui; cd webui;
-echo -e "\033[0;37mInstalling Aria2 (step 5 of 11) ...\033[0m";
+echo -e "\033[0;32mInstalling Aria2 (step 5 of 11) ...\033[0m";
 sudo apt-get install aria2 -y > /dev/null;
 echo -e "\033[1;32mDownloading Miniconda (step 6 of 11) ...\033[0m";
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh > /dev/null 2>&1;
 echo -e "\033[32mCloning Text Generation WebUI from Oobabooga (step 7 of 11) ...\033[0m";
 git clone https://github.com/oobabooga/text-generation-webui.git > /dev/null 2>&1;
 cd text-generation-webui;
-echo -e "\033[1;35mFixing Text Generation WebUI to an older version (step 8 of 11) ...\033[0m";
+echo -e "\033[1;32mFixing Text Generation WebUI to an older version (step 8 of 11) ...\033[0m";
 git reset --hard fcda3f87767e642d1c0411776e549e1d3894843d > /dev/null 2>&1;
 cd ../..;
-echo -e "\033[1;35mDownloading Nvidia drivers (step 9 of 11) ...\033[0m";
+echo -e "\033[1;33mDownloading Nvidia drivers (step 9 of 11) ...\033[0m";
 wget https://download.nvidia.com/XFree86/Linux-x86_64/530.41.03/NVIDIA-Linux-x86_64-530.41.03.run > /dev/null;
 echo -e "\033[1;34mInstalling NVIDIA driver (without CUDA) and rebooting, next step after login 'cd fast_txtgen && ./install' (step 10 of 11) ...\033[0m";
 sudo sh NVIDIA-Linux-x86_64-530.41.03.run -s > /dev/null;
-echo -e "\033[1;34mAll done, rebooting (step 11 of 11) ...\033[0m";
+echo -e "\033[1;35mAll done, rebooting (step 11 of 11) ...\033[0m";
 rm -r *.run && sleep 3;
 reboot
