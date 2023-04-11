@@ -1,8 +1,7 @@
 chmod +x install; chmod +x download; chmod +x run;
 chmod +x edit; chmod +x restore_gui;
-sudo su;
-cp -n /etc/default/grub etc/default/grub.bck;
-mv grb /etc/default/grub;
-systemctl set-default multi-user.target;
+sudo cp -n /etc/default/grub etc/default/grub.bck;
+sudo mv grb /etc/default/grub;
+sudo systemctl set-default multi-user.target;
 echo -e "Prepare to reboot and login into console mode. To restore, cd fast_txtgen && chmod +x restore_gui && ./restore_gui";
 sleep 5 & reboot;
