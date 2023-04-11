@@ -4,5 +4,5 @@ sudo cp -n /etc/default/grub /etc/default/grub.bck;
 sudo mv grb /etc/default/grub; sudo mv nouveau /etc/modprobe.d/blacklist-nouveau.conf;
 sudo systemctl set-default multi-user.target;
 sudo update-initramfs -u;
-echo -e "Prepare to reboot and login into console mode. To restore, cd fast_txtgen && chmod +x restore_gui && ./restore_gui";
+echo -e "Preparing to reboot and login into console mode. Install NVIDIA driver with ./nv_driver";
 sleep 5 && reboot;
