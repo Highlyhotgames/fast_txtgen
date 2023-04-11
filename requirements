@@ -24,7 +24,7 @@ cd ../..;
 echo -e "\033[1;33mDownloading Nvidia drivers (step 9 of 11) ...\033[0m";
 wget https://download.nvidia.com/XFree86/Linux-x86_64/530.41.03/NVIDIA-Linux-x86_64-530.41.03.run > /dev/null;
 echo -e "\033[1;34mInstalling NVIDIA driver (without CUDA) and rebooting, next step after login 'cd fast_txtgen && ./install' (step 10 of 11) ...\033[0m";
-sudo sh NVIDIA-Linux-x86_64-530.41.03.run -s > /dev/null;
+sudo sh NVIDIA-Linux-x86_64-530.41.03.run -s > /dev/null 2>&1;
 echo -e "\033[1;35mAll done, rebooting (step 11 of 11) ...\033[0m";
 rm -r *.run && sleep 3;
 reboot
