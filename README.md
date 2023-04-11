@@ -1,9 +1,9 @@
-# Installation Script for LLaMa 4bit 128g on WSL
+# Installation Script for LLaMa 4bit 128g on Ubuntu
 
 
-This is an installation script - that uses bitsandbytes from TimDettmers, text-generation-webui from oobabooga and GPTQ-for-LLaMa from qwopqowp200 - for LLaMa on your Windows machine using WSL (Windows Subsystem for Linux).
+This is an installation script - that uses bitsandbytes from TimDettmers, text-generation-webui from oobabooga and GPTQ-for-LLaMa from qwopqowp200 - for LLaMa on Ubuntu Desktop v22.04.
 Although with some tweaks you may get this to work properly on another hardware or on multi-GPU setups,
-this tutorial is specifically designed to work with Nvidia graphics cards - and I only cover a Single-GPU configuration.
+these instructions are specifically designed to work with Nvidia graphics cards - and I only cover a Single-GPU configuration.
 I'll be using my RTX2060 with 6GB to load Llama model 7B with 4-bit quantization,
 but you can try this tutorial with other models that fit your Nvidia hardware.
 
