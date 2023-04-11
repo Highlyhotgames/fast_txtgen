@@ -40,11 +40,11 @@ Clone repository and reboot into console mode:
 	
 After reboot, you have two options:
 
-For those that already have Nvidia driver installed and wants to skip driver installation:
+If you already have latest Nvidia driver installed and wants to skip driver installation (not recommended):
 
 	cd fast_txtgen && ./req_basic && ./install
 
-For those who wants to install Nvidia driver (recommended):
+Install Nvidia driver and basic requirements (recommended):
 
 	cd fast_txtgen && ./requirements
 
