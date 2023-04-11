@@ -87,6 +87,7 @@ If you need to edit the run script to suit your needs, run this:
 
 	cd fast_txtgen && ./edit
 
+----------------------------------------------------------------------------------
 (example: when editing the run script you can add --listen to server.py so that you can open the chat on another device, using the Ip address of your PC rather than 127.0.0.1)
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
