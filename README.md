@@ -24,12 +24,7 @@ to minimize the number of steps. This will help you explore these AI models as f
 
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
-
-Instructions:
-----------------------------------------------------------------------------------
-Let's clone the repository and run the first script that will restart our ubuntu in console mode, then we'll install the latest graphics driver for NVIDIA and all the remaining basic requirements.
-
-
+Preliminary instructions:
 ----------------------------------------------------------------------------------
 Open terminal:
 
@@ -38,15 +33,16 @@ Install git:
 	sudo apt install git -y
 
 ----------------------------------------------------------------------------------
+Straight forward installation (without console mode, if you already have the Nvidia drivers installed). Open terminal:
 
-
-If you don't want to run into console mode (you will not be able to run NVIDIA driver installation):
-
-	git clone -b Linux https://github.com/Highlyhotgames/fast_txtgen.git && cd fast_txtgen && chmod +x req_basic && ./req_basic
+	git clone -b Linux https://github.com/Highlyhotgames/fast_txtgen.git && cd fast_txtgen && chmod +x req_basic && ./req_basic && ./install
 
 
 ----------------------------------------------------------------------------------
-Instructions:
+
+
+----------------------------------------------------------------------------------
+Instructions for those who wants to run it in console mode (recommended for low memory graphics cards):
 
 Clone repository and reboot into console mode:
 
@@ -55,10 +51,6 @@ Clone repository and reboot into console mode:
 After reboot:
 
 	cd fast_txtgen && ./requirements
-
-If you already have latest NVIDIA driver installed and want to skip installation, run this line instead:
-
-	cd fast_txtgen && ./req_basic
 
 After reboot:
 
@@ -95,6 +87,7 @@ If you need to edit the run script to suit your needs, run this:
 
 	cd fast_txtgen && ./edit
 
+(example: when editing the run script you can add --listen to server.py so that you can open the chat on another device, using the Ip address of your PC rather than 127.0.0.1)
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
