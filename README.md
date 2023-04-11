@@ -39,11 +39,7 @@ Clone repository and reboot into console mode:
 
 Install Nvidia driver and basic requirements:
 
-	cd fast_txtgen && ./requirements
-
-After reboot:
-
-	cd fast_txtgen && ./restore_gui
+	cd fast_txtgen && ./requirements && ./restore_gui
 
 Back to Ubuntu GUI, open terminal:
 
