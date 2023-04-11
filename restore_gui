@@ -1,6 +1,5 @@
-sudo su;
-mv /etc/default/grub.bck /etc/default/grub;
-update-grub;
-systemctl set-default graphical.target;
+sudo mv /etc/default/grub.bck /etc/default/grub;
+sudo update-grub;
+sudo systemctl set-default graphical.target;
 echo -e "Rebooting..."
 sleep 3 & reboot;
