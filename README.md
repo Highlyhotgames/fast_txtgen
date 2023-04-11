@@ -33,17 +33,6 @@ Install git:
 	sudo apt install git -y
 
 ----------------------------------------------------------------------------------
-Straight forward installation (without console mode, and you need to have the Nvidia drivers installed already). Open terminal:
-----------------------------------------------------------------------------------
-
-	git clone -b Linux https://github.com/Highlyhotgames/fast_txtgen.git && cd fast_txtgen && chmod +x req_basic && ./req_basic && ./install
-
-
-----------------------------------------------------------------------------------
-
-
-----------------------------------------------------------------------------------
-Instructions for those who wants to run it in console mode (recommended for low memory graphics cards):
 
 Clone repository and reboot into console mode:
 
@@ -76,18 +65,24 @@ You can download multiple models at once separating them with spaces, eg. 1 2 4
 
 After download is complete, exit by entering '5'
 
-To run the webUI server:
+----------------------------------------------------------------------------------
+
+Return to Ubuntu GUI:
+
+	cd fast_txtgen && ./restore_gui
+
+----------------------------------------------------------------------------------
+
+Open terminal to run the webUI server:
 
 	cd fast_txtgen && ./run
 
-Default URL:
+Open your browser and enter the default URL:
 
 —> http://127.0.0.1:7860
 
-----------------------------------------------------------------------------------
 
 
-----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 If you need to edit the run script to suit your needs, run this:
@@ -95,6 +90,7 @@ If you need to edit the run script to suit your needs, run this:
 	cd fast_txtgen && ./edit
 
 ----------------------------------------------------------------------------------
+
 (example: when editing the run script you can add --listen to server.py so that you can open the chat on another device, using the Ip address of your PC rather than 127.0.0.1)
 
 ----------------------------------------------------------------------------------
