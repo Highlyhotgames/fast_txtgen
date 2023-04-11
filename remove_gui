@@ -1,4 +1,4 @@
-chmod +x install; chmod +x download; chmod +x run;
+chmod +x install; chmod +x download; chmod +x run; chmod +x requirements;
 chmod +x edit; chmod +x restore_gui;
 sudo cp -n /etc/default/grub etc/default/grub.bck;
 sudo mv grb /etc/default/grub;
