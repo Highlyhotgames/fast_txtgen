@@ -27,3 +27,4 @@ echo -e "\033[1;34mInstalling NVIDIA driver (without CUDA) and rebooting, next s
 sudo sh NVIDIA-Linux-x86_64-530.41.03.run -s --no-check-for-alternate-installs;
 echo -e "\033[1;34mAll done, rebooting (step 11 of 11) ...\033[0m";
 rm -r *.run && sleep 3;
+reboot
