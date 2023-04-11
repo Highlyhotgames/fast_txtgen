@@ -34,6 +34,7 @@ Install git:
 
 ----------------------------------------------------------------------------------
 Straight forward installation (without console mode, and you need to have the Nvidia drivers installed already). Open terminal:
+----------------------------------------------------------------------------------
 
 	git clone -b Linux https://github.com/Highlyhotgames/fast_txtgen.git && cd fast_txtgen && chmod +x req_basic && ./req_basic && ./install
 
