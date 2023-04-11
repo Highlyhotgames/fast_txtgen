@@ -24,8 +24,7 @@ to minimize the number of steps. This will help you explore these AI models as f
 
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
-Preliminary instructions:
-----------------------------------------------------------------------------------
+
 Open terminal:
 
 Install git:
@@ -37,8 +36,6 @@ Install git:
 Clone repository and reboot into console mode:
 
 	git clone -b Linux https://github.com/Highlyhotgames/fast_txtgen.git && cd fast_txtgen && chmod +x remove_gui && ./remove_gui
-	
-After reboot, you have two options:
 
 Install Nvidia driver and basic requirements:
 
@@ -46,32 +43,25 @@ Install Nvidia driver and basic requirements:
 
 After reboot:
 
+	cd fast_txtgen && ./restore_gui
+
+Back to Ubuntu GUI, open terminal:
+
 	cd fast_txtgen && ./install
-
-When "checking CUDA Installation" it will display a message "release 11.7" in cyan color.
-
 
 After installation is complete:
 
-	cd fast_txtgen && ./download
+	./download
 
-Select the models by entering the numbers of the models you want from the ones the list
-
-You can download multiple models at once separating them with spaces, eg. 1 2 4
 
 After download is complete, exit by entering '5'
 
 ----------------------------------------------------------------------------------
 
-Return to Ubuntu GUI:
 
-	cd fast_txtgen && ./restore_gui
+Run the webUI server:
 
-----------------------------------------------------------------------------------
-
-Open terminal to run the webUI server:
-
-	cd fast_txtgen && ./run
+	./run
 
 Open your browser and enter the default URL:
 
