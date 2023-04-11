@@ -56,7 +56,9 @@ After reboot:
 
 	cd fast_txtgen && ./requirements
 
-(If you already have latest NVIDIA driver you can skip its installation by replacing ./requirements with ./req_basic on last line)
+If you already have latest NVIDIA driver installed and want to skip installation, run this line instead:
+
+	cd fast_txtgen && ./req_basic
 
 After reboot:
 
