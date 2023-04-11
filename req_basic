@@ -1,5 +1,7 @@
 #!/bin/bash
 clear;
+chmod +x install; chmod +x download; chmod +x run; chmod +x requirements;
+chmod +x edit; chmod +x restore_gui; chmod +x remove_gui;
 sudo add-apt-repository universe -y > /dev/null;
 echo -e "\033[1;35mAdding Universe APT repository to Ubuntu (step 1 of 11) ...\033[0m";
 echo -e "\033[1;35mUpdating Ubuntu (step 2 of 11) ...\033[0m";
