@@ -1,6 +1,25 @@
 #!/bin/bash
-clear; cd webui;
+clear; mkdir webui; cd webui;
 export PATH=~/miniconda3/envs/webui/bin:$PATH;
+sudo add-apt-repository universe -y > /dev/null;
+echo -e "\033[1;35mAdding Universe APT repository to Ubuntu (step 1 of 11) ...\033[0m";
+echo -e "\033[1;35mUpdating Ubuntu (step 2 of 11) ...\033[0m";
+sudo apt-get update > /dev/null 2>&1;
+sudo apt-get upgrade -y > /dev/null 2>&1;
+echo -e "\033[1;35mInstalling build-essential/pkg-config/libglvnd-dev/git (step 3 of 11) ...\033[0m";
+sudo apt install build-essential -y > /dev/null 2>&1;
+sudo apt install pkg-config > /dev/null 2>&1;
+sudo apt install libglvnd-dev -y > /dev/null 2>&1;
+echo -e "\033[1;35mRegistering script files as executables (step 4 of 11) ...\033[0m";
+echo -e "\033[1;35mInstalling Aria2 (step 5 of 11) ...\033[0m";
+sudo apt-get install aria2 -y > /dev/null;
+echo -e "\033[1;35mDownloading Miniconda (step 6 of 11) ...\033[0m";
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh > /dev/null 2>&1;
+echo -e "\033[1;35mCloning Text Generation WebUI from Oobabooga (step 7 of 11) ...\033[0m";
+git clone https://github.com/oobabooga/text-generation-webui.git > /dev/null 2>&1;
+cd text-generation-webui;
+echo -e "\033[1;35mFixing Text Generation WebUI to an older version (step 8 of 11) ...\033[0m";
+git reset --hard fcda3f87767e642d1c0411776e549e1d3894843d > /dev/null 2>&1;
 echo -e "\033[1;32mInstalling Miniconda (step 1 of 22) ...\033[0m";
 bash Miniconda3-latest-Linux-x86_64.sh -b > /dev/null 2>&1;
 source ~/miniconda3/etc/profile.d/conda.sh;
