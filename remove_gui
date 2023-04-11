@@ -1,0 +1,5 @@
+sudo cp -r /etc/default/grub etc/default/grub.bck;
+sudo mv grb /etc/default/grub;
+sudo systemctl set-default multi-user.target;
+reboot;
+echo -e "Prepare to reboot and login into console mode. To restore, cd fast_txtgen && ./ubuntu_gui"
