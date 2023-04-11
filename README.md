@@ -48,7 +48,11 @@ Clone repository and reboot into console mode:
 
 	git clone -b Linux https://github.com/Highlyhotgames/fast_txtgen.git && cd fast_txtgen && chmod +x remove_gui && ./remove_gui
 	
-After reboot:
+After reboot, for those that already have Nvidia driver installed and wants to skip driver installation:
+
+	cd fast_txtgen && ./req_basic && ./install
+
+For those who wants to install Nvidia driver (recommended):
 
 	cd fast_txtgen && ./requirements
 
