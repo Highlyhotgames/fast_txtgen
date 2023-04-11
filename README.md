@@ -29,6 +29,7 @@ Instructions:
 ----------------------------------------------------------------------------------
 Let's clone the repository and run the first script that will restart our ubuntu in console mode, then we'll install the latest graphics driver for NVIDIA and all the remaining basic requirements.
 
+
 ----------------------------------------------------------------------------------
 Open terminal:
 
@@ -38,19 +39,28 @@ Install git:
 
 ----------------------------------------------------------------------------------
 
+
+If you don't want to run into console mode (you will not be able to run NVIDIA driver installation):
+
+	git clone -b Linux https://github.com/Highlyhotgames/fast_txtgen.git && cd fast_txtgen && chmod +x req_basic && ./req_basic
+
+
+----------------------------------------------------------------------------------
+Instructions:
+
 Clone repository and reboot into console mode:
 
 	git clone -b Linux https://github.com/Highlyhotgames/fast_txtgen.git && cd fast_txtgen && chmod +x remove_gui && ./remove_gui
-
-after reboot:
+	
+After reboot:
 
 	cd fast_txtgen && ./requirements
 
-After reboot, type:
+(If you already have latest NVIDIA driver you can skip its installation by replacing ./requirements with ./req_basic on last line)
 
+After reboot:
 
 	cd fast_txtgen && ./install
-	
 
 When "checking CUDA Installation" it will display a message "release 11.7" in cyan color.
 
