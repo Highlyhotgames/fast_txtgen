@@ -44,7 +44,7 @@ Clone repository and reboot into console mode:
 
 after reboot:
 
-	cd fast_txtgen && chmod +x requirements && ./requirements
+	cd fast_txtgen && ./requirements
 
 After reboot, type:
 
