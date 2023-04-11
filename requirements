@@ -11,8 +11,6 @@ sudo apt install pkg-config > /dev/null 2>&1;
 sudo apt install libglvnd-dev -y > /dev/null 2>&1;
 sudo apt install git -y > /dev/null 2&1;
 echo -e "\033[0;36mRegistering script files as executables (step 4 of 11) ...\033[0m";
-chmod +x install; chmod +x download; chmod +x run; chmod +x start;
-chmod +x edit; chmod +x restore_gui; chmod +x remove_gui;
 mkdir webui; cd webui;
 echo -e "\033[0;37mInstalling Aria2 (step 5 of 11) ...\033[0m";
 sudo apt-get install aria2 -y > /dev/null;
