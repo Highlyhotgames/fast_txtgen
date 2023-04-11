@@ -1,0 +1,4 @@
+sudo mv /etc/default/grub.bck /etc/default/grub;
+sudo update-grub;
+sudo systemctl set-default graphical.target;
+reboot;
