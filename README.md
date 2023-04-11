@@ -43,11 +43,7 @@ Install Nvidia driver and basic requirements:
 
 Back to Ubuntu GUI, open terminal:
 
-	cd fast_txtgen && ./install
-
-After installation is complete:
-
-	./download
+	cd fast_txtgen && ./install && ./download
 
 
 After download is complete, exit by entering '5'
