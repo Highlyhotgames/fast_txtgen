@@ -37,9 +37,9 @@ Clone repository and reboot into console mode:
 
 	git clone -b Linux https://github.com/Highlyhotgames/fast_txtgen.git && cd fast_txtgen && chmod +x remove_gui && ./remove_gui
 
-Install Nvidia driver and basic requirements:
+Install Nvidia driver and return to Ubuntu GUI:
 
-	cd fast_txtgen && ./requirements && ./restore_gui
+	cd fast_txtgen && ./nv_driver && ./restore_gui
 
 Back to Ubuntu GUI, open terminal:
 
