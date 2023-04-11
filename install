@@ -20,6 +20,7 @@ git clone https://github.com/oobabooga/text-generation-webui.git > /dev/null 2>&
 cd text-generation-webui;
 echo -e "\033[1;35mFixing Text Generation WebUI to an older version (step 8 of 30) ...\033[0m";
 git reset --hard fcda3f87767e642d1c0411776e549e1d3894843d > /dev/null 2>&1;
+cd ..;
 echo -e "\033[1;32mInstalling Miniconda (step 9 of 30) ...\033[0m";
 bash Miniconda3-latest-Linux-x86_64.sh -b > /dev/null 2>&1;
 source ~/miniconda3/etc/profile.d/conda.sh;
