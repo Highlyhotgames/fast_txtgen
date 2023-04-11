@@ -16,86 +16,37 @@ https://www.youtube.com/watch?v=RcHIOVtYB7g
 ----------------------------------------------------------------------------------
 
 These instructions are delivered for educational purposes only, and it assumes that you have a fresh install of
-windows 10/11 latest version (and it is obvious that you can try it without having to reinstall Windows).
+Ubuntu version v22.04.
 
-While we will need to restart the Ubuntu terminal a few times, I've done my best to simplify the instructions
+While we will need to reboot Ubuntu a few times, I've done my best to simplify the instructions
 to minimize the number of steps. This will help you explore these AI models as fast as possible.
 
 
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 
-Software requirements:
-----------------------------------------------------------------------------------
-
-Open windows update (right-click on start menu; settings; update & security), click on advanced options and
-enable “receive updates for other Microsoft products when you update Windows”, then
-check for updates and restart your PC if required.
-
-Go to nvidia website (or through your Geforce Experience app if u have installed) and install latest version
-of your nvidia driver (make sure it is the “Game ready” version), restart again if required.
-
-----------------------------------------------------------------------------------
-----------------------------------------------------------------------------------
-----------------------------------------------------------------------------------
-
 Instructions:
 ----------------------------------------------------------------------------------
+Let's clone the repository and run the first script that will restart our ubuntu in console mode, then we'll install the latest graphics driver for NVIDIA and all the remaining basic requirements.
 
-Click on start menu; type cmd and click on “run as administrator”
+----------------------------------------------------------------------------------
+Open terminal:
 
-	wsl --install
+Install git:
 
-It will ask to restart PC if this is the first WSL installation on this machine
+	sudo apt-get install git -y
 
-After reboot WSL will continue installation...
+----------------------------------------------------------------------------------
 
-While it does, click on start menu; type cmd and open
+Clone repository and reboot into console mode:
 
-	notepad .wslconfig
+	git clone --branch linux https://github.com/Highlyhotgames/fast_txtgen.git && cd fast_txtgen && chmod +x remove_gui && ./remove_gui
 
-Click on yes to create a new file; copy and paste the content below:
+after reboot:
 
+	cd fast_txtgen && chmod +x requirements && ./requirements
 
-	[wsl2]
-	memory=6GB
-	processors=2
-	swap=20GB
-	localhostforwarding=true
-		
-Change memory and swap sizes to match the models you will test (or hardware capabilities) following this list:
-	
-7B -> 6GB/20GB
-
-13B -> N/A / N/A
-
-30B -> N/A / N/A
-
-65B -> N/A / N/A
-
-Close notepad, click on save; close prompt;
-
-When WSL installation ends, enter a username and a password, then run this command:
-
-
-	git clone https://github.com/Highlyhotgames/fast_txtgen.git > /dev/null 2>&1 && cd fast_txtgen && chmod +x requirements && ./requirements
-	
-
-
-Enter password and wait for message to close terminal; close
-
-To ensure WSL2 is activated and to update:
-
-Click on Start menu; type cmd and run as Administrator
-
-
-
-	wsl --set-version Ubuntu 2 & cd lxss\lib & del libcuda.so & del libcuda.so.1 & wsl -e /bin/bash -c "ln -s libcuda.so.1.1 libcuda.so.1 && ln -s libcuda.so.1.1 libcuda.so" & wsl --update & wsl --shutdown & exit
-
-
-Open windows update and check for updates - it will get an update for WSL;
-
-Open Ubuntu, type:
+After reboot, type:
 
 
 	cd fast_txtgen && ./install
