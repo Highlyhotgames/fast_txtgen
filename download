@@ -4,7 +4,7 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate webui > /dev/null 2>&1;
 cd webui/text-generation-webui;
 
-options=("7B" "13B" "30B" "65B" "Quit")
+options=("7B" "13B" "30B" "65B" "Vicuna 7B" "Quit")
 
 while true; do
     echo "Please select one or more models (separated by spaces, e.g.: 2 3):"
