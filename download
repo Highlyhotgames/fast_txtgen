@@ -65,7 +65,4 @@ while true; do
 
 done
 
-echo -e "\033[32mDownload is complete! You can run server now with "run"\033[0m"
-cd models;
-
-cd ..;
+echo -e "\033[32mDownload is complete! You can run server now with "run"\033[0m";
