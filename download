@@ -31,28 +31,28 @@ while true; do
                     aria2c LLaMA-HF-4bit-128g.torrent --select-file=2-7,25 -d ~/fast_txtgen/webui/text-generation-webui/models --auto-file-renaming=false --quiet=false --allow-overwrite=true --max-connection-per-server=4 --seed-time=0 --summary-interval=0 --disable-ipv6=true;
                     cd models/LLaMA-HF-4bit-128g;
                     mv llama-7b-4bit-128g ../ > /dev/null 2>&1;
-                    cd ..; cd ..;
+                    cd ..; rm -r LLaMA-HF-4bit-128g; rm LLaMA-HF-4bit-128g.aria2; cd ..;
                     ;;
                 "13B")
                     echo "Retrieving 13B model files from torrent"
                     aria2c LLaMA-HF-4bit-128g.torrent --select-file=8-14 -d ~/fast_txtgen/webui/text-generation-webui/models --auto-file-renaming=false --quiet=false --allow-overwrite=true --max-connection-per-server=4 --seed-time=0 --summary-interval=0 --disable-ipv6=true;
                     cd models/LLaMA-HF-4bit-128g;
                     mv llama-13b-4bit-128g ../ > /dev/null 2>&1;
-                    cd ..; cd ..;
+                    cd ..; rm -r LLaMA-HF-4bit-128g; rm LLaMA-HF-4bit-128g.aria2; cd ..;
                     ;;
                 "30B")
                     echo "Retrieving 30B model files from torrent"
                     aria2c LLaMA-HF-4bit-128g.torrent --select-file=15-21 -d ~/fast_txtgen/webui/text-generation-webui/models --auto-file-renaming=false --quiet=false --allow-overwrite=true --max-connection-per-server=4 --seed-time=0 --summary-interval=0 --disable-ipv6=true;
                     cd models/LLaMA-HF-4bit-128g;
                     mv llama-30b-4bit-128g ../ > /dev/null 2>&1;
-                    cd ..; cd ..;
+                    cd ..; rm -r LLaMA-HF-4bit-128g; rm LLaMA-HF-4bit-128g.aria2; cd ..;
                     ;;
                 "65B")
                     echo "Retrieving 65B model files from torrent"
                     aria2c LLaMA-HF-4bit-128g.torrent --select-file=22-24,1,26 -d ~/fast_txtgen/webui/text-generation-webui/models --auto-file-renaming=false --quiet=false --allow-overwrite=true --max-connection-per-server=4 --seed-time=0 --summary-interval=0 --disable-ipv6=true;
                     cd models/LLaMA-HF-4bit-128g;
                     mv llama-65b-4bit-128g ../ > /dev/null 2>&1;
-                    cd ..; cd ..;
+                    cd ..; rm -r LLaMA-HF-4bit-128g; rm LLaMA-HF-4bit-128g.aria2; cd ..;
                     ;;
                 *)
                     echo "Invalid choice. Please try again."
@@ -67,6 +67,5 @@ done
 
 echo -e "\033[32mDownload is complete! You can run server now with "run"\033[0m"
 cd models;
-rm -r LLaMA-HF-4bit-128g;
-rm LLaMA-HF-4bit-128g.aria2;
+
 cd ..;
