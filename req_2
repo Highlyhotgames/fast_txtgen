@@ -1,5 +1,5 @@
 flexgen==0.1.7
-gradio==3.24.0
+gradio==3.23
 llamacpp==0.1.11
 markdown
 numpy
