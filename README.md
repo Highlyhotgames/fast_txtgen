@@ -1,11 +1,9 @@
-# Installation Script for LLaMa 4bit 128g on WSL
+# Installation Script for LLaMa 4bit 128g on WSL - AMD Graphics Cards
 
 
 This is an installation script - that uses bitsandbytes from TimDettmers, text-generation-webui from oobabooga and GPTQ-for-LLaMa from qwopqowp200 - for LLaMa on your Windows machine using WSL (Windows Subsystem for Linux).
 Although with some tweaks you may get this to work properly on another hardware or on multi-GPU setups,
-this tutorial is specifically designed to work with Nvidia graphics cards - and I only cover a Single-GPU configuration.
-I'll be using my RTX2060 with 6GB to load Llama model 7B with 4-bit quantization,
-but you can try this tutorial with other models that fit your Nvidia hardware.
+this installation script is specifically designed to work with AMD graphics cards - and I only cover a Single-GPU configuration.
 
 ----------------------------------------------------------------------------------
 
@@ -90,7 +88,7 @@ Click on Start menu; type cmd and run as Administrator
 
 
 
-	wsl --set-version Ubuntu 2 & cd lxss\lib & del libcuda.so & del libcuda.so.1 & wsl -e /bin/bash -c "ln -s libcuda.so.1.1 libcuda.so.1 && ln -s libcuda.so.1.1 libcuda.so" & wsl --update & wsl --shutdown & exit
+	wsl --set-version Ubuntu 2 & wsl --update & wsl --shutdown & exit
 
 
 Open windows update and check for updates - it will get an update for WSL;
@@ -101,7 +99,6 @@ Open Ubuntu, type:
 	cd fast_txtgen && ./install
 	
 
-When "checking CUDA Installation" it will display a message "release 11.7" in cyan color.
 
 
 After installation is complete:
