@@ -36,7 +36,7 @@ echo -e "\033[32mCreating repositories folder (step 14 of 20) ...\033[0m";
 cd text-generation-webui;
 mkdir repositories; cd repositories;
 echo -e "\033[32mCloning Oobabooga's CUDA branch for GPTQ-for-LLaMa from qwopqwop200 (step 15 of 20) ...\033[0m";
-git clone --branch cuda https://github.com/oobabooga/GPTQ-for-LLaMa.git > /dev/null 2>&1;
+git clone https://github.com/oobabooga/GPTQ-for-LLaMa.git > /dev/null 2>&1;
 cd GPTQ-for-LLaMa;
 echo -e "\033[1;35mFixing GPTQ-for-LLaMa to an older version (step 16 of 20) ...\033[0m";
 git reset --hard 57a26292ed583528d9941e79915824c5af012279 > /dev/null 2>&1;
