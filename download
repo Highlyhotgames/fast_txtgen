@@ -32,6 +32,7 @@ while true; do
                     cd models/LLaMA-HF-4bit-128g;
                     mv llama-7b-4bit-128g ../ > /dev/null 2>&1;
                     cd ..; rm -r LLaMA-HF-4bit-128g; rm LLaMA-HF-4bit-128g.aria2; cd ..;
+                    break;
                     ;;
                 "13B")
                     echo "Retrieving 13B model files from torrent"
@@ -39,6 +40,7 @@ while true; do
                     cd models/LLaMA-HF-4bit-128g;
                     mv llama-13b-4bit-128g ../ > /dev/null 2>&1;
                     cd ..; rm -r LLaMA-HF-4bit-128g; rm LLaMA-HF-4bit-128g.aria2; cd ..;
+                    break;
                     ;;
                 "30B")
                     echo "Retrieving 30B model files from torrent"
@@ -46,6 +48,7 @@ while true; do
                     cd models/LLaMA-HF-4bit-128g;
                     mv llama-30b-4bit-128g ../ > /dev/null 2>&1;
                     cd ..; rm -r LLaMA-HF-4bit-128g; rm LLaMA-HF-4bit-128g.aria2; cd ..;
+                    break;
                     ;;
                 "65B")
                     echo "Retrieving 65B model files from torrent"
@@ -53,10 +56,12 @@ while true; do
                     cd models/LLaMA-HF-4bit-128g;
                     mv llama-65b-4bit-128g ../ > /dev/null 2>&1;
                     cd ..; rm -r LLaMA-HF-4bit-128g; rm LLaMA-HF-4bit-128g.aria2; cd ..;
+                    break;
                     ;;
                 "Oobabooga downloader")
                     echo "Running download-model.py from text-generation-webui"
                     python download-model.py;
+                    break;
                     ;;
                 *)
                     echo "Invalid choice. Please try again."
