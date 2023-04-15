@@ -23,6 +23,6 @@ echo -e "\033[32mCloning Text Generation WebUI from Oobabooga ...\033[0m";
 git clone https://github.com/oobabooga/text-generation-webui.git > /dev/null 2>&1;
 cd text-generation-webui;
 echo -e "\033[1;35mFixing Text Generation WebUI to an older version ...\033[0m";
-git reset --hard fcda3f87767e642d1c0411776e549e1d3894843d > /dev/null 2>&1;
+git reset --hard 72a89e8fd14aa152cf0b373cac738eff6f87dae2 > /dev/null 2>&1;
 cd ../..;
 echo -e "\033[1;34mAll done, you can close this window now ...\033[0m";
