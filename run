@@ -4,4 +4,4 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate webui > /dev/null 2>&1;
 cd webui/text-generation-webui;
 echo -e "\033[1;35mRunning server ...\033[0m";
-python server.py
+python server.py --chat
