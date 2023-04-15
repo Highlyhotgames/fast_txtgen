@@ -4,7 +4,7 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate webui > /dev/null 2>&1;
 cd webui/text-generation-webui;
 
-options=("7B" "13B" "30B" "65B" "Vicuna 7B" "Quit")
+options=("7B" "13B" "30B" "65B" "Oobabooga downloader" "Quit")
 
 while true; do
     echo "Please select one or more models (separated by spaces, e.g.: 2 3):"
@@ -54,6 +54,10 @@ while true; do
                     mv llama-65b-4bit-128g ../ > /dev/null 2>&1;
                     cd ..; rm -r LLaMA-HF-4bit-128g; rm LLaMA-HF-4bit-128g.aria2; cd ..;
                     ;;
+                "Oobabooga downloader")
+                    echo "Running download-model.py from text-generation-webui"
+                    python download-model.py;
+                    ;;
                 *)
                     echo "Invalid choice. Please try again."
                     ;;
@@ -65,4 +69,4 @@ while true; do
 
 done
 
-echo -e "\033[32mDownload is complete! You can run server now with "run"\033[0m";
+echo -e "\033[32mDownload is complete! You can run server now with ./run\033[0m";
