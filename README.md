@@ -1,6 +1,6 @@
 # Installation Script for LLaMa 4bit 128g on WSL - AMD Graphics Cards
 
-
+[THIS IS UNDER DEVELOPMENT AND NOT WORKING YET]
 This is an installation script - that uses bitsandbytes from TimDettmers, text-generation-webui from oobabooga and GPTQ-for-LLaMa from qwopqowp200 - for LLaMa on your Windows machine using WSL (Windows Subsystem for Linux).
 Although with some tweaks you may get this to work properly on another hardware or on multi-GPU setups,
 this installation script is specifically designed to work with AMD graphics cards - and I only cover a Single-GPU configuration.
